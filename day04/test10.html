@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <title>let 변수</title>
+  </head>
+  <body>
+    <script>
+      /*function calcSum(n) {
+        let sum = 0;
+        for(let i = 1; i < n + 1; i++) {sum += i;}
+        sum = 100; // sum 변수 재할당
+        //let sum = 100; //sum 변수 재선언
+        console.log(sum);
+      }
+      calcSum(10); */
+
+      var x = 10;
+      function displayNumber() {
+        console.log("x is " + x);
+        console.log("y is " + y); //선언되지 않은 y를 사용 - 선언되지 않았다고 뜸(호이스팅이 없다)
+        let y = 20; //y 변수 선언
+      }
+      displayNumber();
+    </script>
+  </body>
+</html>

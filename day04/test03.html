@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+    }
+
+    #box1 {
+      background-color: #4cff00;
+      border: 1px solid transparent;
+      animation-name: shape;
+      animation-duration: 3s;
+      animation-direction: normal;
+      animation-iteration-count: infinite;
+    }
+
+    #box2 {
+      background-color: #8f06b0;
+      border: 1px solid transparent;
+      animation-name: rotate;
+      animation-duration: 3s;
+      animation-direction: normal;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes shape {
+      from {
+        border: 1px solid transparent;
+      }
+
+      to {
+        border: 1px sollid #000;
+        border-radius: 50%;
+      }
+    }
+
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(45deg);
+      }
+    }
+  </style>
+  <title>애니메이션</title>
+</head>
+
+<body>
+  <div class="box" id="box1"></div>
+  <div class="box" id="box2"></div>
+</body>
+
+</html>
